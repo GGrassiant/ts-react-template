@@ -10,6 +10,8 @@
 // To learn more about the benefits of this model and instructions on how to
 // opt-in, read https://bit.ly/CRA-PWA
 
+/* eslint-disable no-use-before-define, @typescript-eslint/no-use-before-define */
+
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
     // [::1] is the IPv6 localhost address.
@@ -41,7 +43,6 @@ export function register(config?: Config) {
 
       if (isLocalhost) {
         // This is running on localhost. Let's check if a service worker still exists or not.
-        // eslint-disable-next-line no-use-before-define,@typescript-eslint/no-use-before-define
         checkValidServiceWorker(swUrl, config);
 
         // Add some additional logging to localhost, pointing developers to the
@@ -54,7 +55,6 @@ export function register(config?: Config) {
         });
       } else {
         // Is not localhost. Just register service worker
-        // eslint-disable-next-line no-use-before-define,@typescript-eslint/no-use-before-defineg
         registerValidSW(swUrl, config);
       }
     });
