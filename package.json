@@ -19,8 +19,8 @@
     "test:watch": "npm run test --watchAll --verbose",
     "test:coverage": "npm run test -- --coverage --watchAll=false --updateSnapshot",
     "eject": "react-scripts eject",
-    "lint": "eslint --ext js,ts,tsx src",
-    "lint:fix": "eslint --fix --ext js,ts,tsx src|| true"
+    "lint": "eslint --ext js,ts,jsx,tsx src",
+    "lint:fix": "eslint --fix --ext js,ts,jsx,tsx src|| true"
   },
   "eslintConfig": {
     "extends": "react-app"
