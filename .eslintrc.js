@@ -33,6 +33,7 @@ module.exports = {
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
     sourceType: 'module', // Allows for the use of imports
   },
+  ignorePatterns: ['serviceWorker.ts'],
   rules: {
     'react/prop-types': 'off', // Disable prop-types as we use TypeScript for type checking
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -45,12 +46,13 @@ module.exports = {
     'implicit-arrow-linebreak': 'off', // Disable to avoid conflicts between prettier and eslint
     'import/prefer-default-export': 'off', // Disable to avoid bugs and issues with Gatsby API
     'react/jsx-props-no-spreading': 'off', // Allow spreading props;
-    "import/no-extraneous-dependencies": 'off', // Allow import modules like @reach/router
-    "no-underscore-dangle": 'off', // allow for private methods with _,
-    "react/state-in-constructor": "off", // allow for just `state =` if no constructor with props
-    "no-param-reassign": "off", // needed for tools like immer
-    "function-paren-newline": "off",
-    "react/no-array-index-key": "off",
+    'import/no-extraneous-dependencies': 'off', // Allow import modules like @reach/router
+    'no-underscore-dangle': 'off', // allow for private methods with _,
+    'react/state-in-constructor': 'off', // allow for just `state =` if no constructor with props
+    'no-param-reassign': 'off', // needed for tools like immer
+    'function-paren-newline': 'off',
+    'react/no-array-index-key': 'off', // Sometimes, objects don't have an id or you want to try something
+    'no-use-before-define': 'off', // issue with React Scripts 4.0
   },
   overrides: [
     // Override some TypeScript rules just for .js files
