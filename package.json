@@ -59,6 +59,12 @@
       ".index.tsx",
       ".serviceWorker.ts"
     ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,ts,tsx,jsx}",
+      "!src/**/*.types.tsx",
+      "!src/**/*types.tsx",
+      "!src/**/*d.ts"
+    ],
     "coverageThreshold": {
       "global": {
         "statements": 80,
