@@ -53,6 +53,9 @@ module.exports = {
     'function-paren-newline': 'off',
     'react/no-array-index-key': 'off', // Sometimes, objects don't have an id or you want to try something
     'no-use-before-define': 'off', // issue with React Scripts 4.0
+    indent: 'off', // Disable to avoid conflict with prettier
+    'no-confusing-arrow': 'off', // Disable to avoid conflict with prettier
+    'arrow-body-style': 'off', // Disable to avoid conflict with prettier
   },
   overrides: [
     // Override some TypeScript rules just for .js files
