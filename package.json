@@ -20,7 +20,8 @@
     "test:coverage": "npm run test -- --coverage --watchAll=false --updateSnapshot",
     "eject": "react-scripts eject",
     "lint": "eslint --ext js,ts,jsx,tsx src",
-    "lint:fix": "eslint --fix --ext js,ts,jsx,tsx src|| true"
+    "lint:fix": "eslint --fix --ext js,ts,jsx,tsx src|| true",
+    "check-before-commit": "npm run lint && npm run test:coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -78,10 +79,5 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write"
-    ]
   }
 }
