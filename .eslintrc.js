@@ -1,6 +1,12 @@
 module.exports = {
   parser: '@typescript-eslint/parser', // Specifies the ESLint parser
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:prettier/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:prettier/recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+  ],
   settings: {
     react: {
       version: 'detect',
